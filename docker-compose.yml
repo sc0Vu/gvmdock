@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+
+    gvm:
+        build:
+            context: ./gvm
+        tty: true
+        volumes:
+            - ./app:/usr/share/app
