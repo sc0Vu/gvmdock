@@ -8,3 +8,11 @@ services:
         tty: true
         volumes:
             - ./app:/usr/share/app
+
+    go:
+        build:
+            context: ./go
+            dockerfile: Dockerfile
+        volumes:
+            - ./app:/app
+        tty: true
